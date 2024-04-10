@@ -20,7 +20,7 @@ const getResults = (e)=> {
 
 const validateName = ()=>{
     let error = [];
-    if (getName.value.length < 5 || getName.value.length > 10) {
+    if (getName.value.length < 3 || getName.value.length > 10) {
         error[0] = true;
         error[1] = "Please introduce a valid name.";
         return error;
