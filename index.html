@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Get a Pokemon</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./src/pokeIcon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <img src="./src/International_Pokémon_logo.svg" alt="pokemon-logo">
+    <h2>Get a Pokemon</h2>
+    <p>Type your name to get your own Pokemon</p>
+    <form class="userName" autocomplete="off">
+        <input type="text" placeholder="Your Name" id="getName">
+        <input type="button" id="buttonGetPokemon" value="get a Pokemon">
+    </form>
+    <div id="validation"></div>
+    <div id="pokemonContainer">
+        <img id="pokemonImg" src="./src/placeholder.png" alt="Pokemon Image">
+        <div id="pokemonContainerDescription">
+            <div id="userGets"></div>
+            <div id="pokemonResult"></div>
+            <div id="pokemonDescription"></div>
+            <div id="typeIcon"></div>
+            <div id="pokemonType"></div>
+        </div>
+    </div>
+    <script src="codigo.js"></script>
+</body>
+</html>
